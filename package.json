@@ -1,0 +1,27 @@
+{
+  "name": "server_13",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test npx jest --forceExit",
+    "db:create:test": "NODE_ENV=test npx sequelize db:create",
+    "db:migrate:test": "NODE_ENV=test npx sequelize db:migrate",
+    "db:seed:test": "NODE_ENV=test npx sequelize db:seed:all"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.8.0",
+    "sequelize": "^6.23.2"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.5.1",
+    "supertest": "^6.3.0"
+  }
+}
